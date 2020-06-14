@@ -22,8 +22,9 @@
         <div id="contact-form" class="section" style="padding-top: 50px;">
             <article class="contactPage">
                 Fill out the form below and I will contact you as soon as I can.
-                <form action="/action_page.php">
-                    <div class="grid-container">
+                <form id="contact-form" method="post" action="contact_form.php">
+                    <!--contact_form.php replaces this.-->
+                    <div class="grid-container" style="margin-bottom: 2px;">
                         <!--Column 1-->
                         <div class="grid-child">
                             <fieldset>
@@ -34,20 +35,23 @@
                                 <input type="email" id="email" name="email" required><br>
                                 <label for="phone">Phone Number:</label>
                                 <input type="phone" id="phone" name="phone"><br>
-                                <label for="cars">Choose a reason:*</label>
-                                <select id="reason" name="reason">
-                                <option value="job">Job</option>
-                                <option value="network">Network</option>
-                                <option value="contract">Contract</option>
-                                <option value="question">Question</option>
-                            </select><br><br>
+                                <small>Fields with * are required</small>
                             </fieldset>
                         </div>
                         <!--Column 2-->
                         <div class="grid-child">
-
-                            <br>
-                            <textarea name="message" rows="10" cols="30">Let me know some specifics of what you're requesting.</textarea>
+                            <fieldset>
+                                <legend>Request Info</legend>
+                                <label for="reason">Choose a reason:*</label>
+                                <select id="reason" name="reason">
+                                    <option value="job">Job</option>
+                                    <option value="network">Network</option>
+                                    <option value="contract">Contract</option>
+                                    <option value="question">Question</option>
+                                </select>
+                                <br><br>
+                                <textarea placeholder="Let me know some specifics of what you're requesting." name="message" rows="6" cols="50"></textarea>
+                            </fieldset>
                         </div>
                     </div>
                     <input type="submit" value="Send">
