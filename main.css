@@ -82,3 +82,23 @@ img {
     padding: 5px;
     width: 150px;
 }
+
+.about-heading-text {
+    width: 55%;
+    margin-right: 2%;
+    margin-top: 2%;
+    float: left;
+}
+
+.about-heading {
+    width: 100%;
+}
+
+.profile-pic {
+    width: 12%;
+    float: left;
+}
+
+.clearfix {
+    clear: both
+}
