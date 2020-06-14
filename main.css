@@ -1,0 +1,84 @@
+.topnav {
+    background-color: gray;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    overflow: hidden;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+}
+
+.topnav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: black;
+    color: white;
+}
+
+.main {
+    padding-top: 50px;
+    border-style: ridge;
+    border-width: 3px;
+    border-color: black;
+    border-spacing: 20px;
+    background-color: rgb(170, 170, 170);
+}
+
+.contactPage {
+    padding: 15px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+}
+
+.section {
+    background-color: lightgray;
+    color: black;
+    border: black;
+    border-style: groove;
+    border-width: 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-gap: 20px;
+}
+
+.topper {
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+body {
+    padding-top: 50px;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}

@@ -2,37 +2,7 @@
 <html>
 
 <head>
-    <style>
-        .topnav {
-            background-color: black;
-            overflow: hidden;
-            position: fixed;
-            /* Set the navbar to fixed position */
-            top: 0;
-            /* Position the navbar at the top of the page */
-            width: 100%;
-            /* Full width */
-        }
-        
-        .topnav a {
-            float: right;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-        
-        .topnav a:hover {
-            background-color: white;
-            color: black;
-        }
-        
-        .topnav a.active {
-            background-color: green;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Theodore Bonham Portfolio</title>
@@ -42,64 +12,29 @@
     <header>
         <div class="topnav">
             <!-- Nav Div -->
-            <a class="active" href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#references">References</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html">About</a>
+            <a href="portfolio.html">Experience</a>
+            <a href="contact.html">Contact</a>
         </div>
     </header>
-    <div id="main ">
-        <h1 style="padding-top: 40px; border-style: ridge; border-width: 3px; border-color: black; border-spacing: 20px; background-color: rgb(170, 170, 170); ">
+    <div id="main" class="topper">
+        <h1>
             Theodore Bonham - Junior Web Developer
         </h1>
-
-        <!-- Main Body-->
-        <!-- Div 1 of 3 -->
-        <div style="border-style: solid; border-width: 4px; padding: 10px; background-color: powderblue; ">
-            <h1 id="#about ">
+        <div id="about" class="section">
+            <img src="media/ted-pic.jpeg" style="position: fixed; right: 0%; top: 0%" ">
+            <h1>
                 About Theodore
             </h1>
             <p>
                 I am Theodore Bonham, a young and adaptable worker looking to forward my career and experiences. I have been self-teaching myself to code in HTML5, CSS, javascript, and Python on and off for 4 years now, and have quite a wide variety of experiences and
                 skills to bring with it. A drive to succeed is one of the highest priorities that I hold. I am looking for a team that I can stay with for a long time, helping both myself and the team grow and prosper.
             </p>
+            <p>For more information, download my resume <a target="_blank " href="media/Theodore-Bonham-Resume.pdf ">here.</a></p>
         </div>
-        <!-- close Div 1 -->
-        <div style="border-style: solid; border-width: 4px; padding: 10px; background-color: powderblue; ">
-            <!-- Div 2 of 3 -->
-            <h2>
-                Education and Experience
-            </h2>
-            <h3 id="#education ">
-                Education
-            </h3>
-            <p>
-                <ul>
-                    <li>
-                        A certificate of proficiency in Web Development and Design as Salt Lake Community College.
-                    </li>
-                    <li>
-                        Graduated from Meadowdale High School, 3.2 GPA.
 
-                    </li>
-                </ul>
-            </p>
-        </div>
-        <!-- Close Div 2 -->
-        <div style="border-style: solid; border-width: 4px; padding: 10px; background-color: powderblue; ">
-            <!-- Open div 3-->
-            <h3 id="#experience ">
-                Experience
-            </h3>
-            <p>
-                *input urls and links for projects here*
-            </p>
-        </div>
-        <!-- Close Div 3 -->
-        <div style="border-style: solid; border-width: 4px; padding: 10px; background-color: powderblue; ">
-            <!-- Close Div 4-->
-            <h2 id="#references ">
+        <div id="references " class="section ">
+            <h2>
                 References
             </h2>
             <h4>
@@ -119,7 +54,6 @@
                 </ul>
             </h4>
         </div>
-        <!-- Close Div 4 -->
     </div>
 </body>
 
