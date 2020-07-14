@@ -31,7 +31,8 @@
     color: white;
 }
 
-.main {
+.main,
+.portfolio {
     border-style: ridge;
     border-width: 3px;
     border-color: black;

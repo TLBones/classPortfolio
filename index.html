@@ -12,7 +12,8 @@
     <title>Theodore Bonham Portfolio</title>
 </head>
 
-<body>
+<body onload="nameCollect()">
+    <!-- Navbar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">Ted Bonham</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,17 +22,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#main">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="#contact-page">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Education & Experience</a>
+                    <a class="nav-link" href="#portfolio">Education & Experience</a>
                 </li>
             </ul>
         </div>
     </nav>
+    <!-- End Navbar -->
+    <!-- Cover Letter -->
     <div id="main" class="container">
         <h1>
             Theodore Bonham - Junior Web Developer
@@ -89,12 +92,114 @@
                 </p>
             </div>
         </div>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </div>
+    <!-- End Cover Letter-->
+    </hr>
+    <!-- Portfolio Details -->
+    <div id="portfolio" class="container">
+        <div id="portfolio" class="container">
+            <h2>
+                Education and Experience
+            </h2>
+            <div id="experience" class="section">
+                <h3>
+                    Experience
+                </h3>
+                <h4>
+                    Portfolio
+                </h4>
+                <p>
+                    This portfolio site was designed, built, and completely created by me. Every small factor, built over the course of my education with Salt Lake Community College. <br> To see more of my updated projects, visit my GitHub page: <a target="_blank"
+                        href="https://github.com/TLBones/">https://github.com/TLBones/</a></p>
+                <h4>Teds Tree</h4>
+                <p>
+                    Teds Tree was a first. A project that would push my personal limits beyond what I had previously done. I learned primarily from watching YouTube Videos and copying the code, and then pushing the code past that boundary to ensure I understood the logic
+                    behind it. If you would like to see the product-to-date click <a target="_blank" href="https://www.teds-tree.com">here.</a> This project is still growing, and is in use to assist my fellow classmates and peers in
+                    their learning and socializing. Built on Django, this project certainly forwarded my knowledge of both Python, and HTML.
+                </p>
+                </article>
+            </div>
+            <div id="education" class="section">
+                <h3>
+                    Education
+                </h3>
+                <p>
+                    <ul>
+                        <li>
+                            A certificate of proficiency in Web Development and Design as Salt Lake Community College.
+                        </li>
+                        <li>
+                            Graduated from Meadowdale High School, 3.2 GPA.
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End Portfolio Details-->
+    </hr>
+    <!-- Contact Form Stuff -->
+    <div id="contact-page" class="container">
+        <h2>Contact Me</h2>
+        <div id="contact-form" class="section">
+            <p style="padding: 5px; padding-bottom: 0px;">Fill out the form below and I will contact you as soon as I can.</p>
+            <article class="contactPage">
+                <form id="contact-form" method="post" action="contact_form.php">
+                    <!--contact_form.php replaces this.-->
+                    <div class="grid-container" style="margin-bottom: 2px;">
+                        <!--Column 1-->
+                        <div class="grid-child">
+                            <fieldset>
+                                <legend>Personal Info</legend>
+                                <label for="name">Name:*</label><br>
+                                <input type="text" id="name" name="name" value="John Smith"><br>
+                                <label for="email">E-mail:*</label><br>
+                                <input type="email" id="email" name="email" required><br>
+                                <label for="phone">Phone Number:</label>
+                                <input type="phone" id="phone" name="phone"><br>
+                                <small>Fields with * are required</small>
+                            </fieldset>
+                        </div>
+                        <!--Column 2-->
+                        <div class="grid-child">
+                            <fieldset>
+                                <legend>Request Info</legend>
+                                <label for="reason">Choose a reason:*</label>
+                                <select id="reason" name="reason">
+                                        <option value="job">Job</option>
+                                        <option value="network">Network</option>
+                                        <option value="contract">Contract</option>
+                                        <option value="question">Question</option>
+                                    </select>
+                                <br><br>
+                                <textarea placeholder="Let me know some specifics of what you're requesting." name="message" rows="6" cols="50"></textarea>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <input type="submit" value="Send">
+                </form>
+            </article>
+        </div>
+    </div>
+    <!-- End Contact Form-->
+    </hr>
+    <!-- Javascript for Name Gathering -->
+    <script>
+        function nameCollect() {
+            var name = prompt("What is your name?", "Your name");
+            if (name != null) {
+                alert("Hello " + name + ", thank you for reviewing my site!");
+            }
+        }
+    </script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </body>
 
 </html>
