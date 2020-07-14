@@ -25,7 +25,7 @@
                     <a class="nav-link" href="#main">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact-page">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#portfolio">Education & Experience</a>
@@ -138,58 +138,16 @@
         </div>
     </div>
     <!-- End Portfolio Details-->
-    </hr>
-    <!-- Contact Form Stuff -->
-    <div id="contact-page" class="container">
-        <h2>Contact Me</h2>
-        <div id="contact-form" class="section">
-            <p style="padding: 5px; padding-bottom: 0px;">Fill out the form below and I will contact you as soon as I can.</p>
-            <article class="contactPage">
-                <form id="contact-form" method="post" action="contact_form.php">
-                    <!--contact_form.php replaces this.-->
-                    <div class="grid-container" style="margin-bottom: 2px;">
-                        <!--Column 1-->
-                        <div class="grid-child">
-                            <fieldset>
-                                <legend>Personal Info</legend>
-                                <label for="name">Name:*</label><br>
-                                <input type="text" id="name" name="name" value="John Smith"><br>
-                                <label for="email">E-mail:*</label><br>
-                                <input type="email" id="email" name="email" required><br>
-                                <label for="phone">Phone Number:</label>
-                                <input type="phone" id="phone" name="phone"><br>
-                                <small>Fields with * are required</small>
-                            </fieldset>
-                        </div>
-                        <!--Column 2-->
-                        <div class="grid-child">
-                            <fieldset>
-                                <legend>Request Info</legend>
-                                <label for="reason">Choose a reason:*</label>
-                                <select id="reason" name="reason">
-                                        <option value="job">Job</option>
-                                        <option value="network">Network</option>
-                                        <option value="contract">Contract</option>
-                                        <option value="question">Question</option>
-                                    </select>
-                                <br><br>
-                                <textarea placeholder="Let me know some specifics of what you're requesting." name="message" rows="6" cols="50"></textarea>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <input type="submit" value="Send">
-                </form>
-            </article>
-        </div>
-    </div>
-    <!-- End Contact Form-->
+
     </hr>
     <!-- Javascript for Name Gathering -->
     <script>
         function nameCollect() {
             var name = prompt("What is your name?", "Your name");
-            if (name != null) {
+            if (name != "" && name != null && name != "Your name") {
                 alert("Hello " + name + ", thank you for reviewing my site!");
+            } else {
+                alert("Hello. Thank you for visiting.");
             }
         }
     </script>
