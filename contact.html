@@ -65,11 +65,11 @@
                                     <option value="question">Question</option>
                                 </select>
                                 <br><br>
-                                <textarea placeholder="Let me know some specifics of what you're requesting." name="message" rows="6" cols="50"></textarea>
+                                <textarea class="textarea" placeholder="Let me know some specifics of what you're requesting." name="message" rows="6" cols="50"></textarea>
                             </fieldset>
                         </div>
                     </div>
-                    <input type="submit" value="Send" onclick="sendMessage()">
+                    <input type="submit" value="Send" onclick="sendMessageTime()">
                 </form>
             </article>
         </div>
@@ -77,8 +77,31 @@
 
     <!-- Javascript for Name Gathering -->
     <script>
-        function sendMessage() {
-            alert("Thank you for your message. I will reach out to you as soon as possible.")
+        function sendMessageMorning() {
+            alert("Good Morning! Thank you for your message. I will reach out to you as soon as possible.")
+        }
+
+        function sendMessageAfternoon() {
+            alert("Good Afternoon! Thank you for your message. I will reach out to you as soon as possible.")
+        }
+
+        function sendMessageNighttime() {
+            alert("Good Night! Thank you for your message. I will reach out to you as soon as possible.")
+        }
+
+        const hours = new Date().getHours();
+        const isDayTime = hours < 12;
+        const isAfternoon = hours > 12 && hours < 18;
+        const isNightTime = hours > 18;
+
+        function sendMessageTime() {
+            if (isDayTime) {
+                sendMessageMorning();
+            } else if (isAfternoon) {
+                sendMessageAfternoon();
+            } else if (isNightTime) {
+                sendMessageNighttime();
+            }
         }
     </script>
 </body>

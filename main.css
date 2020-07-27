@@ -79,3 +79,7 @@ img {
     width: 175px;
     float: right;
 }
+
+.textarea {
+    width: 100%;
+}
