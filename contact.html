@@ -95,11 +95,11 @@
         const isNightTime = hours > 18;
 
         function sendMessageTime() {
-            if (isDayTime) {
+            if (isDayTime == true) {
                 sendMessageMorning();
-            } else if (isAfternoon) {
+            } else if (isAfternoon == true) {
                 sendMessageAfternoon();
-            } else if (isNightTime) {
+            } else if (isNightTime == true) {
                 sendMessageNighttime();
             }
         }

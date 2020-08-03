@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>My Skillz</h2>
+<p id="list"></p>
+<script>
+let languages, iLength, i, text;
+languages = ["JavaScript", "HTML", "CSS", "PHP", "MySQL"];
+iLength = languages.length;
+text="<ul>";
+for (i=0; i < iLength; i++) {
+	text += "<li>" + languages[i] + "</li>";
+    }
+    
+text += "</ul>";
+document.getElementById("list").innerHTML = text;
+</script>
+</body>
+</html>
