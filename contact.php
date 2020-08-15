@@ -74,7 +74,6 @@
             </article>
         </div>
     </div>
-
     <!-- Javascript for Name Gathering -->
     <script>
         function sendMessageMorning() {
