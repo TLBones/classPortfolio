@@ -13,27 +13,35 @@
 </head>
 
 <body onload="nameCollect()">
+
     <!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Ted Bonham</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#main">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Education & Experience</a>
-                </li>
-            </ul>
+    <!--Nav input-->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">Ted Bonham
+                </a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#main">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#portfolio">Education & Experience</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
         </div>
     </nav>
-    <!-- End Navbar -->
+
+    <section class="home">
+    </section>
+    <div style="height: 1000px">
+        <!--End Navbar-->
+
     <!-- Cover Letter -->
     <div id="main" class="container">
         <h1>
